@@ -1,0 +1,11 @@
+# make a square using turtle
+import turtle;
+tur = turtle.Turtle();
+tur.forward(100);
+tur.right(90);
+tur.forward(100);
+tur.right(90);
+tur.forward(100);
+tur.right(90);
+tur.forward(100);
+tur.right(90);
