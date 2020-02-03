@@ -32,6 +32,9 @@ def take_user_input():
     position = int(input("chose any position from 1 to 9 :- ")) -1;
     while position not in [0,1,2,3,4,5,6,7,8]:
         position = int(input("Position : " + str(position + 1) + " is not valid input. So please chose any position from 1 to 9 :- ")) -1;
+    while board[position] != '-':
+        position = int(input("Position : " + str(
+            position + 1) + " is already filled. So please chose new position from 1 to 9 :- ")) - 1;
     if(current_player == "X"):
         board[position] = "X"
     else:
